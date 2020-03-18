@@ -3,22 +3,22 @@ def data_collect(dict):
     #              and handle exception, return in time data
     # INPUT:    Python Dictionary in time generated (value of items can be int or float)
     # OUTPUT:   Python Dictionary data after exception handle
-    # EXAMPLE:  data1 = {'Pulse' : 75, 'BP' : 120, 'OL' : 340}
-    #               data_collect(data1) -> {'Pulse' : 75, 'BP' : 120, 'OL' : 340}
-    #           data2 = {'Pulse' : None, 'BP' : 120, 'OL' : 340}
-    #               data_collect(data2) -> {'Pulse' : None, 'BP' : 120, 'OL' : 340}
+    # EXAMPLE:  data1 = {'Pulse' : 75, 'Blood_Pressure' : 120, 'Oxygen_Level' : 340}
+    #               data_collect(data1) -> {'Pulse' : 75, 'Blood_Pressure' : 120, 'Oxygen_Level' : 340}
+    #           data2 = {'Pulse' : None, 'Blood_Pressure' : 120, 'Oxygen_Level' : 340}
+    #               data_collect(data2) -> {'Pulse' : None, 'Blood_Pressure' : 120, 'Oxygen_Level' : 340}
 
     # Check if data keys in dict, if not, give None value
     if "Pulse" not in dict.keys():
         dict["Pulse"] = None
-    if "BP" not in dict.keys():
-        dict["BP"] = None
-    if "OL" not in dict.keys():
-        dict["OL"] = None
+    if "Blood_Pressure" not in dict.keys():
+        dict["Blood_Pressure"] = None
+    if "Oxygen_Level" not in dict.keys():
+        dict["Oxygen_Level"] = None
 
     pulse = dict['Pulse']
-    bp = dict['BP']
-    ol = dict['OL']
+    bp = dict['Blood_Pressure']
+    ol = dict['Oxygen_Level']
 
     parse = {}
 
@@ -40,13 +40,13 @@ def data_collect(dict):
     return parse
 
 def test_data_collect():
-    data1 = {'Pulse': None, 'BP': 120, 'OL': 340} # int parse
-    data2 = {'Pulse': 75, 'BP': 120.0, 'OL': 340} # float parse
-    data3 = {'Pulse': "wrong type test", 'BP': 120, 'OL': 340} # wrong type exception
-    data4 = {'Pulse': "wrong type test", 'BP': -120, 'OL': 340} # negative number exception
-    assert data_collect(data1) == {'Pulse': None, 'BP': 120, 'OL': 340}
-    assert data_collect(data2) == {'Pulse': 75, 'BP': 120.0, 'OL': 340}
-    assert data_collect(data3) == {'Pulse': None, 'BP': 120, 'OL': 340}
-    assert data_collect(data4) == {'Pulse': None, 'BP': None, 'OL': 340}
+    data1 = {'Pulse': None, 'Blood_Pressure': 120, 'Oxygen_Level': 340} # int parse
+    data2 = {'Pulse': 75, 'Blood_Pressure': 120.0, 'Oxygen_Level': 340} # float parse
+    data3 = {'Pulse': "wrong type test", 'Blood_Pressure': 120, 'Oxygen_Level': 340} # wrong type exception
+    data4 = {'Pulse': "wrong type test", 'Blood_Pressure': -120, 'Oxygen_Level': 340} # negative number exception
+    print(data_collect(data1) == {'Pulse': None, 'Blood_Pressure': 120, 'Oxygen_Level': 340})
+    print(data_collect(data2) == {'Pulse': 75, 'Blood_Pressure': 120.0, 'Oxygen_Level': 340})
+    print(data_collect(data3) == {'Pulse': None, 'Blood_Pressure': 120, 'Oxygen_Level': 340})
+    print(data_collect(data4) == {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340})
 
 # test_data_collect()
