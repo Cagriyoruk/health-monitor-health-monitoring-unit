@@ -1,5 +1,3 @@
-
-
 import csv 
     # description: Receive in-time data (Pulse, Blood Pressure and Oxygen Level)
     #              and handle exception, return in time data
