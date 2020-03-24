@@ -8,7 +8,7 @@ def generate_data():
     data = [Pulse,BP,OL]
     return data
 # run every 1s.
-def main():
+def get_row_data():
     #description: generate data in the fixed range from generate_data() function
     #             then create three random parameters to make exception
     #input: None
@@ -29,8 +29,6 @@ def main():
     if c < 10:
         data[2] = None# let data = None
     dic["Pulse"] = data[0]
-    dic["BP"] = data[1]
-    dic["OL"] = data[2]
+    dic["Blood_Pressure"] = data[1]
+    dic["Oxygen_Level"] = data[2]
     return dic
-if __name__ == '__main__':
-    print(main())

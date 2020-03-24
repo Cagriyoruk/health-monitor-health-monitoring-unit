@@ -10,11 +10,11 @@ def data_collect(dict):
 
     # Check if data keys in dict, if not, give None value
     if "Pulse" not in dict.keys():
-        dict["Pulse"] = None
+        dict["Pulse"] = 0
     if "Blood_Pressure" not in dict.keys():
-        dict["Blood_Pressure"] = None
+        dict["Blood_Pressure"] = 0
     if "Oxygen_Level" not in dict.keys():
-        dict["Oxygen_Level"] = None
+        dict["Oxygen_Level"] = 0
 
     pulse = dict['Pulse']
     bp = dict['Blood_Pressure']
@@ -28,11 +28,11 @@ def data_collect(dict):
     for key in dict.keys():
         value = dict[key]
         # wrong data type -> set None
-        if value is not None and not isinstance(value, int) and not isinstance(value, float):
-            parse[key] = None
+        if value is not 0 and not isinstance(value, int) and not isinstance(value, float):
+            parse[key] = 0
         # negative value -> set None
         elif (isinstance(value, int) and value < 0) or (isinstance(value, float) and value < 0):
-            parse[key] = None
+            parse[key] = 0
         # else just parse
         else:
             parse[key] = value

@@ -10,15 +10,15 @@ def Predictor(file):
         OxygenLevel = df.iloc[:,2].values
         a,b,c = healthPredict(Pulse,BloodPressure,OxygenLevel)   #call the AI function to predict health
         dict = {}
-        dict["Pulse"] = a
-        dict["Blood_Pressure"] = b
-        dict["Oxygen_Level"] = c
+        dict["Pulse"] = int(a)
+        dict["Blood_Pressure"] = int(b)
+        dict["Oxygen_Level"] = int(c)
         return dict  # Return the result from the AI function
     except:
         print("an error occurs")
 
 # making prediction based on the data collect from the Predictor
 def healthPredict(Pulse,BloodPressure,OxygenLevel):
-    return np.mean(Pulse), np.mean(BloodPressure),np.mean(OxygenLevel)  #AI function, here we use average of the number instead 
+    return np.mean(Pulse), np.mean(BloodPressure),np.mean(OxygenLevel)  #AI function, here we use average of the number instead
 
-## test Predictor("Dataset1")
+print(Predictor("database"))
