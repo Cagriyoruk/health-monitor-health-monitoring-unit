@@ -11,6 +11,8 @@ health-monitor-heal-monitoring-unit created by GitHub Classroom
 
 ## Data Collector Section:
 
+### [Data_Collector Code](https://github.com/BUEC500C1/health-monitor-health-monitoring-unit/blob/master/Data_Collect.py)
+
 **Description**:  
 Receive in-time data (Pulse, Blood Pressure and Oxygen Level) and handle exception, return in time data
 
