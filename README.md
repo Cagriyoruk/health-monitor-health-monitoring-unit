@@ -8,7 +8,7 @@
 
 ## Data Generator Section:
 
-## Data Collector Section:
+## Data Collector Section ([Kefan Zhang](https://github.com/h4x0rMadness))
 
 ### [Data_Collector Code](https://github.com/BUEC500C1/health-monitor-health-monitoring-unit/blob/master/Data_Collect.py)
 
