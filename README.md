@@ -48,13 +48,18 @@ EXPECTED OUTPUT:  {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340}
 
 ## DataBase Section:
 
-## AI Predictor Section:
+## AI Predictor Section (Peixi Zhao):
 **Description:**
 
 The AI Predictor Section is to predict the health condition of the patient.
+
 **Input:**
 
+CSV file which is collected by the DataBase Section.
+
 **Output:**
+
+Result from the AI function which predict the health condition of the patient.(Here we choose to output the maen value of the Pulse, Blood Pressure and Oxygen level).
 
 ## Monitor Section:
 
