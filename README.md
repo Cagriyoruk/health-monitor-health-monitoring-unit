@@ -49,6 +49,12 @@ EXPECTED OUTPUT:  {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340}
 ## DataBase Section:
 
 ## AI Predictor Section:
+**Description:**
+
+The AI Predictor Section is to predict the health condition of the patient.
+**Input:**
+
+**Output:**
 
 ## Monitor Section:
 
