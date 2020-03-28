@@ -58,9 +58,11 @@ EXPECTED OUTPUT:  {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340}
 Check whether the recieved data (Pulse, Blood Pressure and Oxygen level) are lethal. Send a notice to the doctor if the levels are critical.
 
 **Input:**
+
 Python Dictionary recieved from Data_Collector
 
 **Output:**
+
 List of abnormal values
 
 **Example:**
