@@ -52,4 +52,34 @@ EXPECTED OUTPUT:  {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340}
 
 ## Monitor Section:
 
-## Alarm Section:
+## Alarm Section (Cagri Yoruk):
+**Description:**
+
+Check whether the recieved data (Pulse, Blood Pressure and Oxygen level) are lethal. Send a notice to the doctor if the levels are critical.
+
+**Input:**
+Python Dictionary recieved from Data_Collector
+
+**Output:**
+List of abnormal values
+
+**Example:**
+
+```
+INPUT:	  data1 = {'Pulse': None, 'Blood_Pressure': 120, 'Oxygen_Level': 70}
+OUTPUT:	  ['No Pulse Value!!!']
+
+INPUT:	  data2 = {'Pulse': 140, 'Blood_Pressure': 100, 'Oxygen_Level': 80}
+OUTPUT:	  ['High Pulse!!!']
+
+INPUT:	  data3 = {'Pulse': 50, 'Blood_Pressure': 160, 'Oxygen_Level': 90}
+OUTPUT:	  ['High Blood Pressure!!!']
+
+INPUT:	  data4 = {'Pulse': 40, 'Blood_Pressure': 100, 'Oxygen_Level': 130}
+OUTPUT:	  ['High Oxygen Level!!!']
+
+INPUT:	  data5 = {'Pulse': 10, 'Blood_Pressure': 20, 'Oxygen_Level': 100}
+OUTPUT:	  ['Low Pulse!!!', 'Low Blood Pressure!!!']
+
+```
+
