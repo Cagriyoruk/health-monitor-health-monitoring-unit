@@ -6,7 +6,19 @@
 
 ## Smart ICU (Main Function) Section:
 
-## Data Generator Section:
+## Data Generator Section (Qingxuan Pei):
+**Description**:
+produce in-time data (Pulse, Blood Pressure and Oxygen Level) in the fixed range, then create three random parameters to make exception.
+
+**INPUT**: 
+None
+
+**OUTPUT**: 
+Python Dictionary data with exception.
+```
+EXAMPLE:  
+Output:       data1 = {'Pulse': None, 'Blood_Pressure': 120, 'Oxygen_Level': 140}
+```
 
 ## Data Collector Section ([Kefan Zhang](https://github.com/h4x0rMadness))
 
