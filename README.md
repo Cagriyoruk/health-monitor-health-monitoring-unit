@@ -14,7 +14,7 @@ This section eventually assembles each of the features as `run.py`, which is the
 
 Here is a demo picture of the monitor running:
 <p align="center">
-  <img width="400" height="250" src="/demo_pic.png">
+  <img width="600" height="375" src="/demo_pic.png">
 </p>
 
 You will also be able to find the demo video as `demo.mov`.
