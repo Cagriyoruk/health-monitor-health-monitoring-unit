@@ -12,7 +12,12 @@ This section eventually assembles each of the features as `run.py`, which is the
 
 `run_time` represents how long will this monitor keeps working and the number inside `time.sleep()` is  the refreshing frequency. 
 
-Here is a demo of the monitor running in demo.mov file.
+Here is a demo picture of the monitor running:
+<p align="center">
+  <img width="800" height="500" src="/demo_pic.png">
+</p>
+
+You will also be able to find the demo video as `demo.mov`.
 
 ## Data Generator Section (Qingxuan Pei):
 **Description**:
