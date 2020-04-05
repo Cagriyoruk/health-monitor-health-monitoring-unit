@@ -17,7 +17,7 @@ Here is a demo picture of the monitor running:
   <img width="600" height="375" src="/demo_pic.png">
 </p>
 
-You will also be able to find the demo video as `demo.mov`.
+You will also be able to find the demo video as `demo.gif`.
 
 <p align="center">
   <img width="800" height="500" src="https://github.com/BUEC500C1/health-monitor-health-monitoring-unit/blob/master/demo.gif">
