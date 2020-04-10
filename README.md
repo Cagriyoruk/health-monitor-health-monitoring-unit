@@ -75,7 +75,25 @@ EXPECTED OUTPUT:  {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340}
 ```
 
 
-## DataBase Section:
+## DataBase Section（Jinyu Tian）:
+
+**Description: **
+
+Receive in-time data (Pulse, Blood Pressure and Oxygen Level and handle exception, return in time data
+  
+**Input:**
+
+Python Dictionary data after exception handle
+
+**Output:**
+1.CSV file: "datavase.csv". The headers of the file are the keys of input Python Dictionary and each row of the file is the value of input Python Dictionary
+2.The filename of csv file: in the form requiried in the predictor part
+
+
+**Example:** 
+
+Input the dictionary "parse" which defined in the test function, then will see the database_test.csv on github.
+   
 
 ## AI Predictor Section (Peixi Zhao):
 **Description:**
