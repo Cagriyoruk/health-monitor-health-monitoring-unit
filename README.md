@@ -77,7 +77,7 @@ EXPECTED OUTPUT:  {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340}
 
 ## DataBase Section（Jinyu Tian）:
 
-**Description: **
+**Description:**
 
 Receive in-time data (Pulse, Blood Pressure and Oxygen Level and handle exception, return in time data
   
