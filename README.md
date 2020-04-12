@@ -4,7 +4,24 @@
   <img width="800" height="500" src="/PNG image-08D2E2371294-1.png">
 </p>
 
-## Smart ICU (Main Function) Section:
+## Smart ICU Section (Suli Hu):
+This section eventually assembles each of the features as `run.py`, which is the entrance of the product.  Under the timer frame, `Data Generator`, `Data Collector`, `DataBase`, `AIPredictor`, `Alarm` and `Monitor(screen)` are synchronized with 2 client-adjustable  arguments in seconds. They are listed below:
+>  run_time = 1000
+
+>  time.sleep(1) 
+
+`run_time` represents how long will this monitor keeps working and the number inside `time.sleep()` is  the refreshing frequency. 
+
+Here is a demo picture of the monitor running:
+<p align="center">
+  <img width="600" height="375" src="/demo_pic.png">
+</p>
+
+You will also be able to find the demo video as `demo.gif`.
+
+<p align="center">
+  <img width="800" height="500" src="https://github.com/BUEC500C1/health-monitor-health-monitoring-unit/blob/master/demo.gif">
+</p>
 
 ## Data Generator Section (Qingxuan Pei):
 **Description**:
@@ -58,7 +75,25 @@ EXPECTED OUTPUT:  {'Pulse': None, 'Blood_Pressure': None, 'Oxygen_Level': 340}
 ```
 
 
-## DataBase Section:
+## DataBase Section（Jinyu Tian）:
+
+**Description:**
+
+Receive in-time data (Pulse, Blood Pressure and Oxygen Level and handle exception, return in time data
+  
+**Input:**
+
+Python Dictionary data after exception handle
+
+**Output:**
+1.CSV file: "datavase.csv". The headers of the file are the keys of input Python Dictionary and each row of the file is the value of input Python Dictionary
+2.The filename of csv file: in the form requiried in the predictor part
+
+
+**Example:** 
+
+Input the dictionary "parse" which defined in the test function, then will see the database_test.csv on github.
+   
 
 ## AI Predictor Section (Peixi Zhao):
 **Description:**
